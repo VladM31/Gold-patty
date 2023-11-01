@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_fon_second">
+
+    <GridLayout
+        android:id="@+id/gamePlayLayout"
+        style="@style/gameplay_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pointFrame"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamePlayLayout"
+        app:srcCompat="@drawable/point_frame"
+        android:contentDescription="@string/point_frame" />
+
+    <TextView
+        android:id="@+id/pointValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/point_def_value"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pointFrame"
+        app:layout_constraintEnd_toEndOf="@+id/pointFrame"
+        app:layout_constraintStart_toStartOf="@+id/pointFrame"
+        app:layout_constraintTop_toTopOf="@+id/pointFrame" />
+
+    <TextView
+        android:id="@+id/leftTime"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="@string/def_time"
+        android:background="@drawable/shine"
+        android:textSize="16sp"
+        android:textColor="@color/eqypt_red"
+        android:textAlignment="center"
+        android:padding="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pointFrame"
+        app:layout_constraintEnd_toStartOf="@+id/pointFrame"
+        app:layout_constraintStart_toStartOf="@+id/gamePlayLayout"
+        app:layout_constraintTop_toTopOf="@+id/pointFrame" />
+
+    <TextView
+        android:id="@+id/rightTime"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/shine"
+        android:padding="20sp"
+        android:text="@string/def_time"
+        android:textAlignment="center"
+        android:textColor="@color/eqypt_red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pointFrame"
+        app:layout_constraintEnd_toEndOf="@+id/gamePlayLayout"
+        app:layout_constraintStart_toEndOf="@+id/pointFrame"
+        app:layout_constraintTop_toTopOf="@+id/pointFrame" />
+
+    <ImageButton
+        android:id="@+id/navigateHome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/navigate_to_menu"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointFrame"
+        app:srcCompat="@drawable/menu_btn"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

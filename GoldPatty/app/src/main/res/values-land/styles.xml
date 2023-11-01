@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="gameplay_space">
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_width">600dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:columnCount">6</item>
+        <item name="android:rowCount">2</item>
+    </style>
+
+    <style name="points_recycler_view">
+        <item name="android:layout_height">220dp</item>
+        <item name="android:layout_width">310dp</item>
+    </style>
+</resources>

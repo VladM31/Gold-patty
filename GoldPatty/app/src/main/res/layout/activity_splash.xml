@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_back"
+    >
+
+
+    <ImageView
+        android:id="@+id/crystalContainer"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/frame_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/crystal_container" />
+
+    <ImageView
+        android:id="@+id/main_crustal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/crystal_orange"
+        app:layout_constraintBottom_toBottomOf="@+id/crystalContainer"
+        app:layout_constraintEnd_toEndOf="@+id/crystalContainer"
+        app:layout_constraintStart_toStartOf="@+id/crystalContainer"
+        app:layout_constraintTop_toTopOf="@+id/crystalContainer"
+        android:contentDescription="@string/orange_crystal" />
+
+    <ImageView
+        android:id="@+id/rightRedCrystal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/crystal_red"
+        app:layout_constraintBottom_toBottomOf="@+id/main_crustal"
+        app:layout_constraintStart_toEndOf="@+id/main_crustal"
+        app:layout_constraintTop_toTopOf="@+id/main_crustal"
+        android:contentDescription="@string/right_red_crystal" />
+
+    <ImageView
+        android:id="@+id/leftRedCrystal"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/crystal_red"
+        app:layout_constraintBottom_toBottomOf="@+id/main_crustal"
+        app:layout_constraintEnd_toStartOf="@+id/main_crustal"
+        app:layout_constraintTop_toTopOf="@+id/main_crustal"
+        android:contentDescription="@string/left_red_crystal" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:background="@color/eqypt_red"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="-10dp"
+        app:layout_constraintBottom_toTopOf="@+id/crystalContainer"
+        app:layout_constraintEnd_toEndOf="@+id/crystalContainer"
+        app:layout_constraintStart_toStartOf="@+id/crystalContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

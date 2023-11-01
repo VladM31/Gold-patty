@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_over_back">
+
+    <ImageView
+        android:id="@+id/leftEffect"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/effects"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hytt" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/effects"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/hytt"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/chest"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/opened_chest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/leftEffect"
+        app:srcCompat="@drawable/opened_chest" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/game_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_pharaoh_gold"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/pointValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/point_def_value"
+        android:textColor="@color/dark_red"
+        android:background="#61FFFFFF"
+        android:paddingHorizontal="10dp"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/chest"
+        app:layout_constraintEnd_toEndOf="@+id/chest"
+        app:layout_constraintStart_toStartOf="@+id/chest"
+        app:layout_constraintTop_toTopOf="@+id/chest" />
+
+    <ImageButton
+        android:id="@+id/navigateHome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/navigate_to_menu"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest"
+        app:srcCompat="@drawable/menu_btn"
+        tools:ignore="ImageContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

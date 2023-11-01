@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <application
+        android:name="com.vlad.nure.GoldPattyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoldPatty"
+
+        android:appCategory="game"
+        android:isGame="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.vlad.nure.activities.RuleActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.vlad.nure.activities.PointsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.vlad.nure.activities.GameOverActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.vlad.nure.activities.GameplayActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.vlad.nure.activities.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.vlad.nure.activities.SplashActivity"
+            android:screenOrientation="locked"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

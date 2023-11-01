@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Gold patty</string>
+    <string name="orange_crystal">Orange crystal</string>
+    <string name="crystal_container">Crystal container</string>
+    <string name="left_red_crystal">Left red crystal</string>
+    <string name="right_red_crystal">Right red crystal</string>
+    <string name="run">Run</string>
+    <string name="exit">Exit</string>
+    <string name="gameplay_images_count">12</string>
+    <string name="point_frame">Point frame</string>
+    <string name="point_def_value">0</string>
+    <string name="def_time">3</string>
+    <string name="effects">Effects</string>
+    <string name="game_title">Game title</string>
+    <string name="opened_chest">Opened chest</string>
+    <string name="navigate_to_menu">Navigate to menu</string>
+    <string name="statistical_back">Statistical back</string>
+    <string name="points">Points</string>
+    <string name="time_of_play_00_00">"Time of play: "</string>
+    <string name="navigate_to_rule_page">Navigate to rule page</string>
+    <string name="gold_rules">You need to click on inactive elements (they do not shine) and activate it, if there was a click on an active element, then the game is over. When you click on the bonus, you get 10 points</string>
+    <string name="sequins_shine">Sequins shine</string>
+    <string name="egyptian_dog">Egyptian dog</string>
+    <string name="running">Running...</string>
+
+</resources>
